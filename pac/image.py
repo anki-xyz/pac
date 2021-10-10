@@ -10,13 +10,10 @@ def imshow(X, resize=None):
     Please enter here a good description.
 
     """
-    l = len(X)
+    
+    im = Image.fromarray(X)
 
-    @interact
-    def _imshow(i:(0, l-1)=0, resize=fixed(resize)):
-        im = Image.fromarray(X[i])
+    if resize:
+        im = im.resize(resize)
 
-        if resize:
-            im = im.resize(resize)
-
-        return im
+    return im

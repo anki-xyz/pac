@@ -2,7 +2,7 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup(name='pac',
-      version='0.1a',
+      version='0.2',
       author='Andreas Kist',
       author_email='me@anki.xyz',
       packages=find_packages(),
